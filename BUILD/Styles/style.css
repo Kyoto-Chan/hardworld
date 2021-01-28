@@ -1,0 +1,171 @@
+body {
+  background: #17181c;
+  margin: 0;
+  color: #fff;
+  font: 300 1em "Fira Sans", sans-serif;
+}
+
+/*BARRA*/
+.barra {
+  background-color: black;
+  opacity: 80%;
+}
+.fill:focus,
+.fill:hover {
+box-shadow: inset 0 0 0 2em var(--hover);
+}
+.pulse:focus,
+.pulse:hover {
+-webkit-animation: pulse 1s;
+animation: pulse 1s;
+box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+@-webkit-keyframes pulse {
+0% {
+  box-shadow: 0 0 var(--hover);
+}
+}
+@keyframes pulse {
+0% {
+  box-shadow: 0 0 var(--hover);
+}
+}
+.close:focus,
+.close:hover {
+box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+}
+.raise:focus,
+.raise:hover {
+box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+-webkit-transform: translateY(-0.25em);
+transform: translateY(-0.25em);
+}
+.up:focus,
+.up:hover {
+box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+.slide:focus,
+.slide:hover {
+box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+.offset {
+box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.offset:focus,
+.offset:hover {
+box-shadow: 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+.pulse {
+--color: #ffffff;
+--hover: #575757;
+}
+
+button {
+color: var(--color);
+transition: 0.25s;
+}
+button:focus,
+button:hover {
+border-color: var(--hover);
+color: #fff;
+}
+a button {
+background: 0 0;
+border: 2px solid;
+font: inherit;
+line-height: 1;
+margin: 0.5em;
+padding: 1em 2em;
+}
+
+/*CUEPRO*/
+.acordeon {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 21px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  opacity: 80%;
+}
+
+.activo,
+.acordeon:hover {
+  background-color: #1815be;
+}
+
+.acordeon::after {
+  content: "\002B";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  float: right;
+  margin-left: 10px;
+}
+
+.activo::after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-eight 0.2s ease-out;
+  background-color: rgb(32, 32, 32);
+  opacity: 98%;
+  color: white;
+  text-align: center;
+  font-family: Arial;
+}
+
+/*BOTON ARMAR PC*/
+.armar {
+  background-color: black;
+  opacity: 80%;
+}
+
+.boton {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 15px 141px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: Arial;
+  opacity: 90%;
+}
+
+.boton1 {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 2px solid #ffffff;
+  
+}
+
+.boton1:hover {
+  background-color: #1900f8;
+  color: white;
+}
+
+
+/*FOOTER*/
+.foot {
+  background-color: #000000;
+  float: center;
+  text-align: center;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+  color: rgb(0, 0, 0) 1c;
+  font: 70% sans-serif;
+  opacity: 80%;
+}
+
